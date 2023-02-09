@@ -1,0 +1,32 @@
+@import 
+url('https://fonts.googleleapis.com/css2?family=Fjalla+one&display=swap');
+
+h2{
+    color: white;
+    font-size: 13vmin;
+    font-family: 'Fjalla one', sans-serif;
+
+}
+
+
+.parent{
+    background-image: linear-gradient(to bottom, black 50%, white 50%);
+}
+
+.parent::after {
+    content: '';
+    display: block;
+    min-height: 100vh;
+
+}
+
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    position: sticky;
+    top: 1vmin;
+    mix-blend-mode: difference;
+}
